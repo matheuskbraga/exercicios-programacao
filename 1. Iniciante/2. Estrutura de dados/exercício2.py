@@ -1,0 +1,1 @@
+# Implemente uma lista ligada simples com operações básicas de inserção, remoção e busca.
