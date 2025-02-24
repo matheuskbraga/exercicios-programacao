@@ -56,6 +56,8 @@ def operacaoDesejada(escolha, lista):
 
 os.system('cls')
 lista = armazenarNumeros()
+condicao = True
+condicao2 = True
 while True:
   decisao = menuPrincipal()
   operacaoDesejada(decisao, lista)
