@@ -20,18 +20,18 @@ class LinkedList:
     
     
     def remover(self, key):
-        atual = self.head
+        atual = self.head # nó atual da lista
         prev = None
 
-        while atual and atual.data != key:
-            prev = atual
-            atual = atual.next
+        while atual and atual.data != key: # quando 'atual' não for None e o dado do nó não for igual a 'key'
+            prev = atual    # atualiza 'prev' para o nó atual
+            atual = atual.next # avança para o próximo nó da lista
 
         if not atual:
             print("Elemento não encontrado.")
-            return
+            return # sai do método
         
-        if prev:
+        if prev: # verifica se o nó a ser removido não é o primeiro da lista.
             prev.next = atual.next
         else:
             self.head = atual.next
